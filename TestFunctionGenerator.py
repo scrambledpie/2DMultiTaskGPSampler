@@ -5,8 +5,8 @@ import numpy as np\
 from scipy.spatial import distance_matrix\
 def createFunction(rho=-0.7,seed=1):\
     np.random.seed(seed)\
-    Nx=10\
     lX=0.2\
+    Nx=round(2/lX,0)\
     dx=1/Nx\
     ilX2 = -0.5/(lX*lX)\
     xT=np.linspace(-1+dx,1-dx,Nx)\
